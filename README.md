@@ -3,7 +3,7 @@
 
 **Spice Soul** is a vibrant and responsive frontend restaurant web application designed to showcase an elegant online presence for a modern restaurant. This static website includes features such as menu display, online reservation, cart and checkout flow, contact and gallery pages.
 
-## 🌐 Live Preview
+## Live Preview
 You can run this project locally by opening `index.html` in your browser.
 
 ---
@@ -12,21 +12,21 @@ You can run this project locally by opening `index.html` in your browser.
 
 > Replace these with actual screenshots from the project folder after capturing.
 
-### 🏠 Home Page
+### Home Page
 ![Home Page](screenshots/home.png)
 
-### 🍽️ Menu Page
+### Menu Page
 ![Menu Page](screenshots/menu.png)
 
-### 📅 Reservation Page
+### Reservation Page
 ![Reservation Page](screenshots/reservation.png)
 
-### 🛒 Cart & Checkout
+### Cart & Checkout
 ![Check & Checkout Page](screenshots/checkout.png)
 
 ---
 
-## 📁 Folder Structure
+## Folder Structure
 
 ```
 Restaurant/
@@ -48,7 +48,7 @@ Restaurant/
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 - **HTML5**
 - **CSS3**
@@ -57,7 +57,7 @@ Restaurant/
 
 ---
 
-## 🚀 Features
+## Features
 
 - Elegant home page with navigation
 - Detailed menu with dish categories
