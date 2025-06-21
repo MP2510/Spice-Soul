@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About Us - Spice & Soul</title>
+    <meta
+      name="description"
+      content="Learn about Spice & Soul's history, philosophy, and meet Chef Anjali Sharma. Experience authentic Indian cuisine crafted with passion and innovation."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar" aria-label="Primary navigation">
+        <div
+          class="logo"
+          tabindex="0"
+          aria-label="Spice and Soul Logo"
+          role="img"
+        >
+          Spice & Soul
+        </div>
+        <ul class="nav-links" role="menubar" aria-label="Main menu">
+          <li role="none">
+            <a href="index.html" role="menuitem" tabindex="0">Home</a>
+          </li>
+          <li role="none">
+            <a href="menu.html" role="menuitem" tabindex="0">Menu</a>
+          </li>
+          <li role="none">
+            <a
+              href="about.html"
+              role="menuitem"
+              tabindex="0"
+              aria-current="page"
+              >About Us</a
+            >
+          </li>
+          <li role="none">
+            <a href="reservation.html" role="menuitem" tabindex="0"
+              >Reservation</a
+            >
+          </li>
+          <li role="none">
+            <a href="gallery.html" role="menuitem" tabindex="0">Gallery</a>
+          </li>
+          <li role="none">
+            <a href="contact.html" role="menuitem" tabindex="0">Contact</a>
+          </li>
+          <li role="none">
+            <a
+              href="cart.html"
+              role="menuitem"
+              tabindex="0"
+              aria-label="Shopping cart with items count"
+            >
+              <span class="cart-icon" aria-hidden="true">
+                <img src="img/cart.png" alt="Shopping cart icon" />
+                <span
+                  id="cart-count"
+                  class="cart-count"
+                  aria-live="polite"
+                  aria-atomic="true"
+                  >0</span
+                >
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="about container" aria-label="About us section">
+        <h2>Our Story</h2>
+        <p>
+          Spice & Soul was born from a passion for sharing the vibrant flavors
+          of India with the world. Founded by Chef Anjali Sharma, our restaurant
+          is a celebration of culinary heritage and innovation. We believe in
+          using fresh, locally sourced ingredients whenever possible, and in
+          crafting dishes that are both authentic and exciting.
+        </p>
+
+        <h2>Our Culinary Philosophy</h2>
+        <p>
+          We are committed to providing an exceptional dining experience that
+          tantalizes the taste buds and nourishes the soul. Our menu is
+          carefully curated to showcase the diversity of Indian cuisine, from
+          classic curries to modern fusion creations. We strive to create a warm
+          and inviting atmosphere where guests can relax and enjoy the company
+          of friends and family.
+        </p>
+
+        <h2>Meet Our Chef</h2>
+        <article class="chef-profile" aria-label="Chef Profile">
+          <img
+            src="img/ranvir_brar.png"
+            alt="Chef Ranveer Brar portrait"
+            loading="lazy"
+          />
+          <div>
+            <h3>Ranveer Brar</h3>
+            <p>
+              Chef Ranveer Brar is a renowned Indian celebrity chef, television
+              host, author, and restaurateur. Born in Lucknow in 1978, he was
+              inspired by the rich street food culture of his hometown. He
+              became one of India’s youngest executive chefs at the Taj Group
+              and went on to open award-winning restaurants in India and abroad,
+              including in Boston. Known for his storytelling and deep
+              understanding of Indian cuisine, he has hosted and judged popular
+              cooking shows like MasterChef India and The Great Indian Rasoi.
+              Ranveer promotes traditional Indian cooking, regional flavors, and
+              sustainable practices. His warm, poetic style has made him a
+              beloved figure in the culinary world.
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content container">
+        <nav class="social-links" aria-label="Social media links">
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="Facebook"
+            ><img src="img/facebook.png" alt="Facebook logo"
+          /></a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="Instagram"
+            ><img src="img/instagram.png" alt="Instagram logo"
+          /></a>
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="Twitter"
+            ><img src="img/twitter.png" alt="Twitter logo"
+          /></a>
+        </nav>
+        <form
+          class="newsletter"
+          aria-label="Newsletter signup"
+          action="#"
+          method="post"
+        >
+          <input
+            type="email"
+            aria-label="Email address"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+          <button type="submit" class="btn btn-primary">Sign Up</button>
+        </form>
+        <p>&copy; 2024 Spice & Soul. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/cart.js"></script>
+  </body>
+</html>

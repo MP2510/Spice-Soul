@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Menu - Spice & Soul</title>
+    <meta
+    name="description"
+    content="Explore the diverse and delicious menu of Spice & Soul, featuring starters, mains, desserts, and beverages with authentic Indian flavors and modern twists."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+    rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar" aria-label="Primary navigation">
+        <div
+        class="logo"
+        tabindex="0"
+        aria-label="Spice and Soul Logo"
+        role="img"
+        >
+        Spice & Soul
+        </div>
+        <ul class="nav-links" role="menubar" aria-label="Main menu">
+          <li role="none">
+            <a href="index.html" role="menuitem" tabindex="0">Home</a>
+          </li>
+          <li role="none">
+            <a href="menu.html" role="menuitem" tabindex="0" aria-current="page"
+            >Menu</a
+            >
+          </li>
+          <li role="none">
+            <a href="about.html" role="menuitem" tabindex="0">About Us</a>
+          </li>
+          <li role="none">
+            <a href="reservation.html" role="menuitem" tabindex="0"
+            >Reservation</a
+            >
+          </li>
+          <li role="none">
+            <a href="gallery.html" role="menuitem" tabindex="0">Gallery</a>
+          </li>
+          <li role="none">
+            <a href="contact.html" role="menuitem" tabindex="0">Contact</a>
+          </li>
+          <li role="none">
+            <a
+            href="cart.html"
+            role="menuitem"
+            tabindex="0"
+            aria-label="Shopping cart with items count"
+            >
+            <span class="cart-icon" aria-hidden="true">
+                <img src="img/cart.png" alt="Shopping cart icon" />
+                <span
+                id="cart-count"
+                class="cart-count"
+                aria-live="polite"
+                aria-atomic="true"
+                >0</span
+                >
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+      <section class="menu container" aria-label="Menu section">
+        <h2>Our Menu</h2>
+        
+        <article class="menu-category" aria-label="Starters">
+          <h3>Starters</h3>
+          
+          <article class="menu-item" aria-label="Paneer Tikka, ₹220">
+            <img
+              src="img/paneer tikka.png"
+              alt="Paneer Tikka served on a plate"
+              loading="lazy"
+            />
+            <div class="menu-item-details">
+              <h4>Paneer Tikka<span class="price">₹220</span></h4>
+              <p>Tandoor-roasted marinated paneer cubes.</p>
+              <button
+                class="btn btn-primary"
+                onclick="addToCart({name:'Paneer Tikka', price:220, image:'img/paneer tikka.png'})"
+                aria-label="Add Paneer Tikka to cart"
+              >
+                Add to Cart
+              </button>
+              <button
+                class="btn btn-secondary"
+                onclick="alert('Ordering Paneer Tikka for ₹220')"
+              >
+                Buy Now
+              </button>
+            </div>
+          </article>
+
+          <article class="menu-item" aria-label="Cheese Corn Balls, ₹200">
+            <img
+              src="img/cheese balls.png"
+              alt="Cheese Corn Balls served on a plate"
+              loading="lazy"
+            />
+            <div class="menu-item-details">
+              <h4>Cheese Corn Balls<span class="price">₹200</span></h4>
+              <p>Melt-in-mouth crispy balls with a cheesy corn filling.</p>
+              <button
+                class="btn btn-primary"
+                onclick="addToCart({name:'Cheese Corn Balls', price:200, image:'img/cheese balls.png'})"
+                aria-label="Add Cheese Corn Balls to cart"
+              >
+                Add to Cart
+              </button>
+              <button
+                class="btn btn-secondary"
+                onclick="alert('Ordering Cheese Corn Balls for ₹200')"
+              >
+                Buy Now
+              </button>
+            </div>
+          </article>
+          <article class="menu-item" aria-label="Paneer Pakora, ₹190">
+            <img
+              src="img/pakora.png"
+              alt="Paneer Pakora served on a plate"
+              loading="lazy"
+            />
+            <div class="menu-item-details">
+              <h4>Paneer Pakora<span class="price">₹190</span></h4>
+              <p>Deep-fried paneer fritters with gram flour coating.</p>
+              <button
+                class="btn btn-primary"
+                onclick="addToCart({name:'Paneer Pakora', price:190, image:'img/paneer tikka.png'})"
+                aria-label="Add Paneer Pakora to cart"
+              >
+                Add to Cart
+              </button>
+              <button
+                class="btn btn-secondary"
+                onclick="alert('Ordering Paneer Pakora for ₹190')"
+              >
+                Buy Now
+              </button>
+            </div>
+          </article>
+          
+          <article class="menu-item" aria-label="Seekh Kebab, ₹210">
+            <img src="img/kabab.png" alt="Seekh Kebab" loading="lazy" />
+            <div class="menu-item-details">
+              <h4>Seekh Kebab <span class="price">₹210</span></h4>
+              <p>Spiced mixed vegetable skewers grilled to perfection.</p>
+              <button
+                class="btn btn-primary"
+                onclick="addToCart({name:'Seekh Kebab', price:210, image:'img/kabab.png'})"
+                aria-label="Add Seekh Kebab to cart"
+              >
+                Add to Cart
+              </button>
+              <button
+                class="btn btn-secondary"
+                onclick="alert('Ordering Seekh Kebab for ₹210')"
+              >
+                Buy Now
+              </button>
+            </div>
+          </article>
+        </article>
+
+        <article class="menu-category" aria-label="Mains">
+          <h3>Mains</h3>
+
+          <article class="menu-item" aria-label="Paneer Butter Masala, ₹260">
+            <img
+              src="img/Paneer Butter Masala.png"
+              alt="Paneer Butter Masala"
+              loading="lazy"
+            />
+            <div class="menu-item-details">
+              <h4>Paneer Butter Masala<span class="price">₹260</span></h4>
+              <p>
+                Cottage cheese in a creamy tomato-butter gravy.
+              </p>
+              <button
+                class="btn btn-primary"
+                onclick="addToCart({name:'Paneer Butter Masala', price:120, image:'img/Paneer Butter Masala.png'})"
+                aria-label="Add Paneer Butter Masala to cart"
+              >
+                Add to Cart
+              </button>
+              <button
+                class="btn btn-secondary"
+                onclick="alert('Ordering Paneer Butter Masala for ₹120')"
+              >
+                Buy Now
+              </button>
+            </div>
+          </article>
+
+          <article class="menu-item" aria-label="Kadai Paneer, ₹250">
+            <img
+              src="img/kadai paneer.png"
+              alt="Kadai Paneer"
+              loading="lazy"
+            />
+            <div class="menu-item-details">
+              <h4>Kadai Paneer<span class="price">₹250</span></h4>
+              <p>
+                Stir-fried paneer with bell peppers in a rich, spicy gravy.
+              </p>
+              <button
+                class="btn btn-primary"
+                onclick="addToCart({name:'Kadai Paneer', price:250, image:'img/kadai paneer.png'})"
+                aria-label="Add Kadai Paneer to cart"
+              >
+                Add to Cart
+              </button>
+              <button
+                class="btn btn-secondary"
+                onclick="alert('Ordering Kadai Paneer for ₹250')"
+              >
+                Buy Now
+              </button>
+            </div>
+          </article>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content container">
+        <nav class="social-links" aria-label="Social media links">
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="Facebook"
+            ><img src="img/facebook.png" alt="Facebook logo"
+          /></a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="Instagram"
+            ><img src="img/instagram.png" alt="Instagram logo"
+          /></a>
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="Twitter"
+            ><img src="img/twitter.png" alt="Twitter logo"
+          /></a>
+        </nav>
+        <form
+          class="newsletter"
+          aria-label="Newsletter signup"
+          action="#"
+          method="post"
+        >
+          <input
+            type="email"
+            aria-label="Email address"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+          <button type="submit" class="btn btn-primary">Sign Up</button>
+        </form>
+        <p>&copy; 2024 Spice & Soul. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/cart.js"></script>
+  </body>
+</html>

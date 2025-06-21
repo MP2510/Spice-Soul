@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Reservation - Spice & Soul</title>
+    <meta
+      name="description"
+      content="Reserve your table at Spice & Soul online. Choose date, time, number of guests and enjoy authentic Indian cuisine in a warm atmosphere."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar" aria-label="Primary navigation">
+        <div
+          class="logo"
+          tabindex="0"
+          aria-label="Spice and Soul Logo"
+          role="img"
+        >
+          Spice & Soul
+        </div>
+        <ul class="nav-links" role="menubar" aria-label="Main menu">
+          <li role="none">
+            <a href="index.html" role="menuitem" tabindex="0">Home</a>
+          </li>
+          <li role="none">
+            <a href="menu.html" role="menuitem" tabindex="0">Menu</a>
+          </li>
+          <li role="none">
+            <a href="about.html" role="menuitem" tabindex="0">About Us</a>
+          </li>
+          <li role="none">
+            <a
+              href="reservation.html"
+              role="menuitem"
+              tabindex="0"
+              aria-current="page"
+              >Reservation</a
+            >
+          </li>
+          <li role="none">
+            <a href="gallery.html" role="menuitem" tabindex="0">Gallery</a>
+          </li>
+          <li role="none">
+            <a href="contact.html" role="menuitem" tabindex="0">Contact</a>
+          </li>
+          <li role="none">
+            <a
+              href="cart.html"
+              role="menuitem"
+              tabindex="0"
+              aria-label="Shopping cart with items count"
+            >
+              <span class="cart-icon" aria-hidden="true">
+                <img src="img/cart.png" alt="Shopping cart icon" />
+                <span
+                  id="cart-count"
+                  class="cart-count"
+                  aria-live="polite"
+                  aria-atomic="true"
+                  >0</span
+                >
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="reservation container" aria-label="Reservation section">
+        <h2>Book a Table</h2>
+        <!-- <img src="img/table.jpg"alt="Table Reservation" class="reservation-image" />" -->
+        <form
+          id="reservation-form"
+          novalidate
+          aria-label="Table reservation form"
+        >
+          <div class="form-group">
+            <label for="name">Name<span aria-hidden="true">*</span>:</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              required
+              aria-required="true"
+              placeholder="Your full name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="date">Date<span aria-hidden="true">*</span>:</label>
+            <input
+              id="date"
+              name="date"
+              type="date"
+              required
+              aria-required="true"
+            />
+          </div>
+          <div class="form-group">
+            <label for="time">Time<span aria-hidden="true">*</span>:</label>
+            <input
+              id="time"
+              name="time"
+              type="time"
+              required
+              aria-required="true"
+            />
+          </div>
+          <div class="form-group">
+            <label for="guests"
+              >Number of Guests<span aria-hidden="true">*</span>:</label
+            >
+            <input
+              id="guests"
+              name="guests"
+              type="number"
+              min="1"
+              required
+              aria-required="true"
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input
+              id="phone"
+              name="phone"
+              type="tel"
+              placeholder="e.g., 123-456-7890"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email<span aria-hidden="true">*</span>:</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              required
+              aria-required="true"
+              placeholder="e.g., email@example.com"
+            />
+          </div>
+          <button type="submit" class="btn btn-primary">
+            Submit Reservation
+          </button>
+        </form>
+        <div
+          id="reservation-message"
+          class="message"
+          aria-live="polite"
+          role="alert"
+        ></div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content container">
+        <nav class="social-links" aria-label="Social media links">
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="Facebook"
+            ><img src="img/facebook.png" alt="Facebook logo"
+          /></a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="Instagram"
+            ><img src="img/instagram.png" alt="Instagram logo"
+          /></a>
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="Twitter"
+            ><img src="img/twitter.png" alt="Twitter logo"
+          /></a>
+        </nav>
+        <form
+          class="newsletter"
+          aria-label="Newsletter signup"
+          action="#"
+          method="post"
+        >
+          <input
+            type="email"
+            aria-label="Email address"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+          <button type="submit" class="btn btn-primary">Sign Up</button>
+        </form>
+        <p>&copy; 2024 Spice & Soul. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/cart.js"></script>
+  </body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Checkout - Spice & Soul</title>
+    <meta
+      name="description"
+      content="Complete your order with Spice & Soul by providing delivery details and selecting a payment method. Fast and secure checkout process."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar" aria-label="Primary navigation">
+        <div
+          class="logo"
+          tabindex="0"
+          aria-label="Spice and Soul Logo"
+          role="img"
+        >
+          Spice & Soul
+        </div>
+        <ul class="nav-links" role="menubar" aria-label="Main menu">
+          <li role="none">
+            <a href="index.html" role="menuitem" tabindex="0">Home</a>
+          </li>
+          <li role="none">
+            <a href="menu.html" role="menuitem" tabindex="0">Menu</a>
+          </li>
+          <li role="none">
+            <a href="about.html" role="menuitem" tabindex="0">About Us</a>
+          </li>
+          <li role="none">
+            <a href="reservation.html" role="menuitem" tabindex="0"
+              >Reservation</a
+            >
+          </li>
+          <li role="none">
+            <a href="gallery.html" role="menuitem" tabindex="0">Gallery</a>
+          </li>
+          <li role="none">
+            <a href="contact.html" role="menuitem" tabindex="0">Contact</a>
+          </li>
+          <li role="none">
+            <a
+              href="cart.html"
+              role="menuitem"
+              tabindex="0"
+              aria-label="Shopping cart with items count"
+            >
+              <span class="cart-icon" aria-hidden="true">
+                <img src="img/cart.png" alt="Shopping cart icon" />
+                <span
+                  id="cart-count"
+                  class="cart-count"
+                  aria-live="polite"
+                  aria-atomic="true"
+                  >0</span
+                >
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section
+        class="container"
+        aria-label="Checkout section"
+        style="padding: 4rem 1rem 6rem"
+      >
+        <h2>Checkout</h2>
+        <form id="checkout-form" novalidate aria-label="Checkout form">
+          <div class="form-group">
+            <label for="checkout-name"
+              >Name<span aria-hidden="true">*</span>:</label
+            >
+            <input
+              id="checkout-name"
+              name="checkout-name"
+              type="text"
+              required
+              aria-required="true"
+              placeholder="Your full name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="checkout-address"
+              >Address<span aria-hidden="true">*</span>:</label
+            >
+            <input
+              id="checkout-address"
+              name="checkout-address"
+              type="text"
+              required
+              aria-required="true"
+              placeholder="Delivery address"
+            />
+          </div>
+          <div class="form-group">
+            <label for="checkout-phone"
+              >Phone<span aria-hidden="true">*</span>:</label
+            >
+            <input
+              id="checkout-phone"
+              name="checkout-phone"
+              type="tel"
+              required
+              aria-required="true"
+              placeholder="e.g., 123-456-7890"
+            />
+          </div>
+          <div class="form-group">
+            <label for="checkout-payment"
+              >Payment Method<span aria-hidden="true">*</span>:</label
+            >
+            <select
+              id="checkout-payment"
+              name="checkout-payment"
+              required
+              aria-required="true"
+            >
+              <option value="">Select</option>
+              <option value="cod">Cash on Delivery</option>
+              <option value="card">Card Payment</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">Place Order</button>
+        </form>
+        <div
+          id="checkout-message"
+          class="message"
+          aria-live="polite"
+          role="alert"
+        ></div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content container">
+        <nav class="social-links" aria-label="Social media links">
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="Facebook"
+            ><img src="img/facebook.png" alt="Facebook logo"
+          /></a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="Instagram"
+            ><img src="img/instagram.png" alt="Instagram logo"
+          /></a>
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="Twitter"
+            ><img src="img/twitter.png" alt="Twitter logo"
+          /></a>
+        </nav>
+        <form
+          class="newsletter"
+          aria-label="Newsletter signup"
+          action="#"
+          method="post"
+        >
+          <input
+            type="email"
+            aria-label="Email address"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+          <button type="submit" class="btn btn-primary">Sign Up</button>
+        </form>
+        <p>&copy; 2024 Spice & Soul. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/cart.js"></script>
+  </body>
+</html>

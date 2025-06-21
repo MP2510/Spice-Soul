@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gallery - Spice & Soul</title>
+    <meta
+      name="description"
+      content="Explore our gallery showcasing delightful Indian dishes and our welcoming restaurant interior at Spice & Soul."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar" aria-label="Primary navigation">
+        <div
+          class="logo"
+          tabindex="0"
+          aria-label="Spice and Soul Logo"
+          role="img"
+        >
+          Spice & Soul
+        </div>
+        <ul class="nav-links" role="menubar" aria-label="Main menu">
+          <li role="none">
+            <a href="index.html" role="menuitem" tabindex="0">Home</a>
+          </li>
+          <li role="none">
+            <a href="menu.html" role="menuitem" tabindex="0">Menu</a>
+          </li>
+          <li role="none">
+            <a href="about.html" role="menuitem" tabindex="0">About Us</a>
+          </li>
+          <li role="none">
+            <a href="reservation.html" role="menuitem" tabindex="0"
+              >Reservation</a
+            >
+          </li>
+          <li role="none">
+            <a
+              href="gallery.html"
+              role="menuitem"
+              tabindex="0"
+              aria-current="page"
+              >Gallery</a
+            >
+          </li>
+          <li role="none">
+            <a href="contact.html" role="menuitem" tabindex="0">Contact</a>
+          </li>
+          <li role="none">
+            <a
+              href="cart.html"
+              role="menuitem"
+              tabindex="0"
+              aria-label="Shopping cart with items count"
+            >
+              <span class="cart-icon" aria-hidden="true">
+                <img src="img/cart.png" alt="Shopping cart icon" />
+                <span
+                  id="cart-count"
+                  class="cart-count"
+                  aria-live="polite"
+                  aria-atomic="true"
+                  >0</span
+                >
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="gallery container" aria-label="Gallery section">
+        <h2>Our Gallery</h2>
+        <div class="gallery-grid">
+          <img
+            src="img/grill.jpeg"
+            alt="cooking"
+            loading="lazy"
+          />
+          <img
+            src="img/interior.jpeg"
+            alt="Restaurant interior view showing tables and décor"
+            loading="lazy"
+          />
+          <img
+            src="img/interior2.jpeg"
+            alt="Restaurant seating area with modern design"
+            loading="lazy"
+          />
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content container">
+        <nav class="social-links" aria-label="Social media links">
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="Facebook"
+            ><img src="img/facebook.png" alt="Facebook logo"
+          /></a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="Instagram"
+            ><img src="img/instagram.png" alt="Instagram logo"
+          /></a>
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="Twitter"
+            ><img src="img/twitter.png" alt="Twitter logo"
+          /></a>
+        </nav>
+        <form
+          class="newsletter"
+          aria-label="Newsletter signup"
+          action="#"
+          method="post"
+        >
+          <input
+            type="email"
+            aria-label="Email address"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+          <button type="submit" class="btn btn-primary">Sign Up</button>
+        </form>
+        <p>&copy; 2024 Spice & Soul. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/cart.js"></script>
+  </body>
+</html>

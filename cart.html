@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Your Cart - Spice & Soul</title>
+    <meta
+      name="description"
+      content="Review your cart items before placing your order for delicious Indian cuisine at Spice & Soul. Modify quantities, remove items, and proceed to checkout."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar" aria-label="Primary navigation">
+        <div
+          class="logo"
+          tabindex="0"
+          aria-label="Spice and Soul Logo"
+          role="img"
+        >
+          Spice & Soul
+        </div>
+        <ul class="nav-links" role="menubar" aria-label="Main menu">
+          <li role="none">
+            <a href="index.html" role="menuitem" tabindex="0">Home</a>
+          </li>
+          <li role="none">
+            <a href="menu.html" role="menuitem" tabindex="0">Menu</a>
+          </li>
+          <li role="none">
+            <a href="about.html" role="menuitem" tabindex="0">About Us</a>
+          </li>
+          <li role="none">
+            <a href="reservation.html" role="menuitem" tabindex="0"
+              >Reservation</a
+            >
+          </li>
+          <li role="none">
+            <a href="gallery.html" role="menuitem" tabindex="0">Gallery</a>
+          </li>
+          <li role="none">
+            <a href="contact.html" role="menuitem" tabindex="0">Contact</a>
+          </li>
+          <li role="none">
+            <a
+              href="cart.html"
+              role="menuitem"
+              tabindex="0"
+              aria-current="page"
+              aria-label="Shopping cart with items count"
+            >
+              <span class="cart-icon" aria-hidden="true">
+                <img src="img/cart.png" alt="Shopping cart icon" />
+                <span
+                  id="cart-count"
+                  class="cart-count"
+                  aria-live="polite"
+                  aria-atomic="true"
+                  >0</span
+                >
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section
+        class="cart container"
+        aria-label="Shopping cart section"
+        style="padding-bottom: 6rem"
+      >
+        <h2>Your Cart</h2>
+        <div
+          id="cart-items"
+          role="list"
+          aria-live="polite"
+          aria-relevant="additions removals"
+        ></div>
+        <h3>Total: <span id="cart-total" aria-live="polite">₹0.00</span></h3>
+        <form id="checkout-form" novalidate aria-label="Checkout form">
+          <h2>Delivery Details</h2>
+          <div class="form-group">
+            <label for="fullName"
+              >Full Name<span aria-hidden="true">*</span>:</label
+            >
+            <input
+              id="fullName"
+              name="fullName"
+              type="text"
+              required
+              aria-required="true"
+              autocomplete="name"
+              placeholder="Your full name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="address"
+              >Address<span aria-hidden="true">*</span>:</label
+            >
+            <textarea
+              id="address"
+              name="address"
+              required
+              aria-required="true"
+              rows="3"
+              placeholder="Delivery address"
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label for="phone"
+              >Phone Number<span aria-hidden="true">*</span>:</label
+            >
+            <input
+              id="phone"
+              name="phone"
+              type="tel"
+              required
+              aria-required="true"
+              autocomplete="tel"
+              placeholder="e.g., 123-456-7890"
+            />
+          </div>
+          <div class="form-group">
+            <label for="payment"
+              >Payment Method<span aria-hidden="true">*</span>:</label
+            >
+            <select id="payment" name="payment" required aria-required="true">
+              <option value="">Select</option>
+              <option value="cod">Cash on Delivery</option>
+              <option value="online">Online Payment</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">Place Order</button>
+        </form>
+        <div
+          id="order-message"
+          class="message"
+          aria-live="polite"
+          role="alert"
+        ></div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content container">
+        <nav class="social-links" aria-label="Social media links">
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="Facebook"
+            ><img src="img/facebook.png" alt="Facebook logo"
+          /></a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="Instagram"
+            ><img src="img/instagram.png" alt="Instagram logo"
+          /></a>
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="Twitter"
+            ><img src="img/twitter.png" alt="Twitter logo"
+          /></a>
+        </nav>
+        <form
+          class="newsletter"
+          aria-label="Newsletter signup"
+          action="#"
+          method="post"
+        >
+          <input
+            type="email"
+            aria-label="Email address"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+          <button type="submit" class="btn btn-primary">Sign Up</button>
+        </form>
+        <p>&copy; 2024 Spice & Soul. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/cart.js"></script>
+  </body>
+</html>
