@@ -10,8 +10,6 @@ You can run this project locally by opening `index.html` in your browser.
 
 ## 📸 Screenshots
 
-> Replace these with actual screenshots from the project folder after capturing.
-
 ### Home Page
 ![Home Page](screenshots/home.png)
 
